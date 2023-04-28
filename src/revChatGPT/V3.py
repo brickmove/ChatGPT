@@ -135,7 +135,7 @@ class Chatbot:
             "gpt-4-32k",
             "gpt-4-32k-0314",
         ]:
-            raise NotImplementedError("Unsupported engine {self.engine}")
+            raise NotImplementedError(f"Unsupported engine {self.engine}")
 
         tiktoken.model.MODEL_TO_ENCODING["gpt-4"] = "cl100k_base"
 
@@ -203,7 +203,7 @@ class Chatbot:
             raise t.APIConnectionError(
                 f"{response.status_code} {response.reason} {response.text}",
             )
-        response_role: str = None
+        response_role: str or None = None
         full_response: str = ""
         for line in response.iter_lines():
             if not line:
@@ -371,7 +371,7 @@ class Chatbot:
                 indent=2,
             )
 
-    def load(self, file: str, *keys_: str) -> None:
+    def load(self, file: Path, *keys_: str) -> None:
         """
         Load the Chatbot configuration from a JSON file
         """

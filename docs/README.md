@@ -1,12 +1,14 @@
 # ChatGPT <img src="https://github.com/acheong08/ChatGPT/blob/main/logo.png?raw=true" width="15%"></img>
 
-English - [中文](./README_zh.md)
+English - [中文](./README_zh.md) - [Spanish](./README_sp.md) -  [日本語](./README_ja.md)
 
 [![PyPi](https://img.shields.io/pypi/v/revChatGPT.svg)](https://pypi.python.org/pypi/revChatGPT)
 [![Support_Platform](https://img.shields.io/pypi/pyversions/revChatGPT)](https://pypi.python.org/pypi/revChatGPT)
 [![Downloads](https://static.pepy.tech/badge/revchatgpt)](https://pypi.python.org/pypi/revChatGPT)
 
 Reverse Engineered ChatGPT API by OpenAI. Extensible for chatbots etc.
+
+[![](https://github.com/acheong08/ChatGPT/blob/main/docs/view.gif?raw=true)](https://pypi.python.org/pypi/revChatGPT)
 
 > ## Support my work
 >
@@ -28,7 +30,7 @@ python -m pip install --upgrade revChatGPT
 - Recommend - Python3.11+
 
 <details>
-  
+
   <summary>
 
 # V1 Standard ChatGPT
@@ -149,7 +151,7 @@ Refer to the [wiki](https://github.com/acheong08/ChatGPT/wiki/) for advanced dev
 
 </details>
 
-<summary>  
+<summary>
 
 # V3 Official Chat API
 
