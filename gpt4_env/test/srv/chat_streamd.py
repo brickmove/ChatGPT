@@ -25,7 +25,7 @@ chatbot = Chatbot(config={
 })
 
 def answer(ask_param):
-    prev_text = ""
+    prev_text = "" 
     conversation_id = ""
     for data in chatbot.ask(**ask_param):
         message = data["message"][len(prev_text):]

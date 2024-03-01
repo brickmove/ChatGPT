@@ -22,7 +22,8 @@ chatbot = Chatbot(config={
     "collect_analytics": _collect_analytics
 })
 
-os.environ['CHATGPT_BASE_URL'] = 'http://13.58.240.216:28997/'
+#os.environ['CHATGPT_BASE_URL'] = 'http://13.58.240.216:28997/'
+
 @app.route('/api/faqs/chat', methods=['POST'])
 def chat():
     # 从请求参数中获取要查询的文本
